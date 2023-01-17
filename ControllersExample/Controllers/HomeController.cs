@@ -23,14 +23,19 @@ public class HomeController : Controller
         return View();
     }
 
-    public ContentResult Test()
+    //public ContentResult Test()
+    //{
+    //    //return new ContentResult()
+    //    //{
+    //    //    Content = "Hello",
+    //    //    ContentType = "text/plain"
+    //    //};
+    //    return Content("<h1>Hello!</h1> <h2>Welcome to my world.</h2>", "text/html");
+    //}
+
+    public IActionResult Test()
     {
-        //return new ContentResult()
-        //{
-        //    Content = "Hello",
-        //    ContentType = "text/plain"
-        //};
-        return Content("<h1>Hello!</h1> <h2>Welcome to my world.</h2>", "text/html"); 
+        return View(); 
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
